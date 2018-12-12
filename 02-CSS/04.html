@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>圆角设置</title>
+
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            border: 3px solid #000000;
+            /*border-radius: 10px;*/
+            /*border-radius: 50%;!*变成了圆*!*/
+            /*
+            如果给四个值：
+            第一个是左上角
+            第二个是右上角
+            第三个是右下角
+            第四个是左下角
+            顺时针方向
+            */
+            /*border-radius:10px 30px 50px 70px ;*/
+            /*给两个值 设置对角 第一个值设置左上角和右下角 第二个值设置右上和左下*/
+            border-radius: 10px 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

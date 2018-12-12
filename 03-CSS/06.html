@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素的隐藏和显示</title>
+    <style>
+        .box1{
+            /*隐藏的元素不占据位置*/
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            display: none;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            /*把元素转换成块元素 还可以显示隐藏的元素*/
+            /*display:none;*/
+        }
+        .box2 span{
+            /*display: none;*/
+
+        }
+        .box2:hover span{
+                color: yellow;
+                display:none;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+
+        }
+        /*隐藏字体*/
+        .box3 span{
+            display:none
+
+        }
+        /*鼠标移入显示字体*/
+        .box3:hover span{
+            display: block;
+            text-align: center;
+            line-height: 200px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2"><span>box2</span></div>
+    <div class="box3">
+        <span>我显示了</span>
+    </div>
+</body>
+</html>

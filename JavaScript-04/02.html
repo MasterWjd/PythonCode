@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <style>
+        #item1{
+            width: 50px;
+            height: 200px;
+            background-color: #116633;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="item1"></div>
+    <script>
+
+        var oDiv=document.getElementById('item1');
+        // oDiv.style.width="100px";
+        //启动一个多次定时器
+        var i=0;
+        var set=setInterval(function(){
+            //间隔500毫秒 让div的宽度加1
+            i++;
+            oDiv.style.width=i+'px';
+            oDiv.style.height=i+'px';
+            //当div的宽高等于200的时候 停止定时器
+            if(i==200){
+                clearInterval(set);
+
+            }
+        },50);
+
+    </script>
+
+</body>
+</html>

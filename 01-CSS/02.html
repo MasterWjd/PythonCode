@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS的三种基本选择器</title>
+    <style>
+        /*标签选择器 通过标签来设置元素的样式 影响范围最大 一般情况下 会把所有的div都选中 此时需要id标记*/
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: cornflowerblue;
+        }
+        /*类选择器 前面加 . 通过class类名来设置元素的样式 影响范围可控制 影响范围相对较小*/
+        .item1{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+        .item2{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        /*#id选择器 通过id属性的值来设置元素的样式*/
+        /*注意id在html中具有唯一性，不能重名*/
+        /*注意：三种选择器优先级问题 影响范围大的选择器优先级低 id>class>元素选择器 推荐使用class选择器*/
+        #box1{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+        }
+        #box2{
+            width: 200px;
+            height: 100px;
+            /*设置边框*/
+            /*border: 10px solid red;*/
+            /*background-color: cornflowerblue;*/
+            border: 1px solid blue;
+            /*background: white;*/
+        }
+        #box3{
+            width: 200px;
+            height: 100px;
+            /*设置边框*/
+            /*border: 10px solid red;*/
+            /*background-color: cornflowerblue;*/
+            border: solid 10px black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS的三种基本选择器</h1>
+    <!--<div style="width: 200px;height: 200px;background-color: cornflowerblue"></div>-->
+    <div></div>
+    <div class="item1" id="box3"></div>
+    <div class="item2"></div>
+    <div id="box1"></div>
+    <div id="box2"></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css的使用</title>
+    <!--在使用外链式和嵌入式方式时 body体里必须加上<div></div>标签对-->
+    <!--1.外链式，通过link标签引入css文件 要在head标签中引入-->
+    <link rel="stylesheet" href="./01.css">
+    <!--2.嵌入式 是通过style标签来写 也要写在head标签当中-->
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: cornflowerblue;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>这是CSS的相关内容（Cascading Style Sheets）</h1><br>
+    <!--无语义的块级元素 一般配合css使用-->
+    <!--3.内联式 同style属性来设置css样式-->
+    <!--在css三种使用方式中存在优先级问题，离元素越近的优先级就越高 实际中推荐使用外链式-->
+    <div style="width: 200px;height: 200px;background-color: yellow"></div>
+    <!--<div style=""></div>-->
+
+</body>
+</html>

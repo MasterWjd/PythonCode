@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>层级选择器</title>
+    <style>
+        .wrap{
+            width: 800px;
+            height: 800px;
+            border: 1px solid green;
+
+        }
+        /*层级选择器 通过父级元素来设置子级元素 设置子级元素的子级样式*/
+        /*层级选择器可以和多种选择器混合使用*/
+        .wrap div{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+        .wrap .in{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+        .wrap .id{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="in">
+
+        </div>
+
+        <div class="id">
+
+        </div>
+        <div>
+            <div class="in"></div>
+        </div>
+    </div>
+</body>
+</html>

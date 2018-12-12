@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS外间距</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 5px solid yellow;
+        }
+        .item1{
+            background-color: green;
+            /*
+            设置item的底部外间距，距离item2为20px
+            语法：margin 设置外间距
+            */
+            /*margin-bottom: 20px;*/
+            /*margin-left: 20px;*/
+            /*
+            设置四个值的时候
+                第一个值代表当前元素距离上边元素的距离
+                第二个元素代表当前元素距离右边元素的距离
+                第三个元素代表当前元素距离下边元素的间距
+                第四个值代表当前元素距离右边元素的距离
+            设置两个值的时候：
+                第一个值代表上下边距
+                第二个值代表左右边距
+             当设置一个值的时候：
+                代表上下左右四个方向的间距
+            */
+            /*margin 设置负值 让边框合并*/
+            margin-top: -5px;
+        }
+        .item2{
+            background-color: blue;
+            /*margin-bottom: 20px;*/
+            /*margin-left: 20px;*/
+            /*margin-top: 20px;*/
+            /*margin使用技巧 让元素水平居中*/
+            /*margin: 0 auto;*/
+             margin: -5px 0;
+        }
+        .item3{
+            background-color: cornflowerblue;
+
+        }
+    </style>
+</head>
+<body>
+    <!--外间距：是元素距离周围元素的间距-->
+    <div class="item1"></div>
+    <div class="item2"></div>
+    <div class="item3"></div>
+</body>
+</html>

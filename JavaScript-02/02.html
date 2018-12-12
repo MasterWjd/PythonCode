@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据类型转换</title>
+</head>
+<body>
+    <script>
+        //数据类型转换 Number() parseInt()  parseInt()
+            /*注意：当字符串当中包含任意一个非数值表示的字符时
+                    Number（） 返回NaN
+                    parseInt（）只取整数，parseFloat（） 从前往后读，如果碰到非数值的字符，后面内容舍去
+                    当字符串一开始就是非数值表示的字符串时，都返回NaN
+
+             */
+        // var str = '1abc123abc';
+        // var res = Number(str);
+        // var res1 = parseInt(str);
+        // var res2 = parseFloat(str);
+        // console.log(str,typeof (str));
+        // console.log(res,typeof (res));
+        // console.log(res1,typeof (res1));
+        // console.log(res2,typeof (res2));
+        // isNaN 检测是否是一个数 反问式判断
+        // var num = '1';
+        // console.log(num,isNaN(num));
+        //布尔值数据类型的转换 Boolean() 字符串为空时，转为布尔值为false
+        var str = '';
+        console.log(Boolean(str));
+        //数值类型转布尔值为false 0,0.0，NaN
+        //对象转布尔值 为false
+        //var obj = {name:'1',age:24};
+        //var obj = {};
+        var obj = null;
+        console.log(Boolean(obj));
+
+
+
+
+
+
+    </script>
+</body>
+</html>
